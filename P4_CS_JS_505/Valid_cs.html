@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Validation</title>
+    <link rel="stylesheet" href="Valid_cs.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Vehicle Registration Check</h2>
+        <form id="vehicleForm">
+            <div class="input-group">
+                <input type="text" id="regNumber" name="regNumber" placeholder=" " maxlength="10" autocomplete="off">
+                <label for="regNumber">Enter Registration Number</label>
+            </div>
+            
+            <div class="rules-box">
+                <h4>Validation Rules:</h4>
+                <ul id="rulesList">
+              
+                </ul>
+            </div>
+
+            <div id="errorMessage" class="message error"></div>
+            <div id="successMessage" class="message success"></div>
+            
+            <button type="submit">Validate Number</button>
+        </form>
+    </div>
+    <script src="Valid_cs.js"></script>
+    <div style="position: fixed; bottom: 10px; right: 15px; color: rgba(255, 0, 0, 0.6); font-size: 24px; font-weight: bold; z-index: 1000;">
+    CREATED BY: M Hussain Khan, 
+    PRN: 25070521505
+  </div>
+</body>
+</html>   
