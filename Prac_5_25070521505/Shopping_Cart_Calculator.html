@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Shopping Cart</h1>
+    
+    <section class="input-group">
+      <h2>Add Product</h2>
+      <div class="form-row">
+        <label>Product Name</label>
+        <input type="text" id="pName" placeholder="e.g. Laptop">
+      </div>
+      <div class="form-row">
+        <label>Price (₹)</label>
+        <input type="number" id="pPrice" placeholder="e.g. 1200">
+      </div>
+      <button id="btnAdd">Add to Cart</button>
+    </section>
+
+    <section class="cart-display">
+      <div class="cart-header">
+        <h2>Cart Items</h2>
+        <button id="btnClear" class="btn-danger">Clear Cart</button>
+      </div>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price (₹)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <div id="expensive-section" class="alert-box warning"></div>
+    <div id="summary-section" class="alert-box success"></div>
+  </div>
+  <div style="position: fixed; bottom: 10px; right: 10px; font-family: sans-serif; fontsize: 14px; color: #da1111; background-color: rgba(255, 208, 0, 0.8); padding: 5px 10px;
+border-radius: 4px; z-index: 1000;">
+ Name: M HUSSAIN KHAN <br>
+ PRN: 8482871166
+</div> 
+    
+
+  <script src="script.js"></script>
+</body>
+</html>   
